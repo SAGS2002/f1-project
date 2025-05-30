@@ -1,0 +1,63 @@
+#scrollToTopBtn {
+    display: none; /* Se oculta por defecto y se muestra con JavaScript */
+    position: fixed; /* ¡Esto lo hace flotante! */
+    bottom: 20px; /* Distancia desde el borde inferior de la ventana */
+    right: 20px; /* Distancia desde el borde derecho de la ventana */
+    z-index: 99; /* Lo mantiene por encima de la mayoría de los demás elementos */
+
+    /* Estilos para el botón contenedor */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    border: none;
+    border-radius: 50%; /* Hace el botón redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón (igual al ancho para ser círculo) */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease; /* Transiciones suaves */
+
+    /* NUEVO: Usar flexbox para centrar la imagen PNG dentro del botón */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    /* REMUEVE la propiedad font-size si la tenías aquí */
+}
+
+/* NUEVO: Estilos para la imagen PNG dentro del botón */
+#scrollToTopBtn img {
+    max-width: 70%; /* La imagen ocupará el 70% del ancho del botón */
+    max-height: 70%; /* La imagen ocupará el 70% del alto del botón */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+    filter: invert(100%); /* Opcional: invierte los colores si el PNG es oscuro y el fondo del botón es oscuro */
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Más oscuro al pasar el mouse */
+    transform: scale(1.1); /* Ligera escala al pasar el mouse */
+}
+
+/* Media queries para que sea responsivo (ajusta el tamaño de la imagen también) */
+@media (max-width: 768px) {
+    #scrollToTopBtn {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+    #scrollToTopBtn img {
+        max-width: 65%;
+        max-height: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    #scrollToTopBtn {
+        width: 45px;
+        height: 45px;
+        bottom: 10px;
+        right: 10px;
+    }
+    #scrollToTopBtn img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+}

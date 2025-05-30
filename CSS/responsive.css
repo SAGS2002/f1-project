@@ -1,0 +1,341 @@
+/* --- Media Queries for Header --- */
+@media (max-width: 1200px) {
+    .header-container {
+        flex-direction: column; /* Stack header content vertically */
+        min-height: auto; /* Allow height to adjust */
+    }
+
+    .logo-and-car,
+    .text-container {
+        width: 100%; /* Take full width */
+        min-height: 50vh; /* Ensure each section has some height */
+    }
+
+    .f1-car {
+        width: 600px; /* Smaller car image */
+    }
+
+    .main-nav ul {
+        font-size: 1.8rem;
+    }
+
+    .header-description h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-description p {
+        font-size: 1.2rem;
+    }
+}
+
+/* --- Media Queries Grid --- */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column; /* Stack grid and pilot display vertically */
+        min-height: auto;
+    }
+
+    .grid,
+    .pilots {
+        width: 100%; /* Take full width */
+        min-height: auto; /* Allow height to adjust */
+    }
+
+    .grid {
+        padding-bottom: 40px; /* More padding at bottom of grid */
+    }
+
+    .pilot-container ul {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid for more columns if space allows */
+    }
+
+    .pilots {
+        height: 600px; /* Fixed height for pilot display on tablets */
+    }
+
+    .pilot-img {
+        max-width: 350px;
+        transition: opacity 0.5s ease-in-out;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .pilot-container ul {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Adjust grid for smaller buttons */
+        gap: 8px;
+    }
+
+    .boton-icon {
+        max-width: 80px; /* Smaller button size */
+    }
+
+    .pilots {
+        height: 500px; /* Smaller fixed height for pilot display on mobile */
+    }
+
+    .pilot-img {
+        max-width: 280px;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .pilots .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .pilot-container ul {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Even smaller grid buttons */
+        gap: 5px;
+    }
+
+    .boton-icon {
+        max-width: 70px;
+    }
+
+    .pilots {
+        height: 400px; /* Even smaller fixed height for pilot display */
+    }
+
+    .pilot-img {
+        max-width: 200px;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .pilots .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    #pilot-nickname {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* --- Media Queries Carrusel --- */
+
+@media (max-width: 1024px) {
+    .carousel-container {
+        margin: 30px auto; /* Menos margen en pantallas más pequeñas */
+        height: 70vh; /* Ajustar altura para que quepa mejor */
+    }
+
+    .carousel-item img {
+        height: 500px; /* Reducir la altura de la imagen */
+    }
+
+    .carousel-item .team-name {
+        font-size: 2em; /* Reducir el tamaño de la fuente del nombre del equipo */
+        bottom: 15px; /* Ajustar posición */
+        padding: 8px 15px;
+    }
+
+    .carousel-control {
+        padding: 12px 15px; /* Reducir padding de los controles */
+        font-size: 1.8em; /* Reducir el tamaño de los iconos de control */
+    }
+}
+
+/* Para pantallas pequeñas (ej. móviles) */
+@media (max-width: 768px) {
+    .carousel-container {
+        margin: 20px auto; /* Menos margen aún */
+        height: 60vh; /* Ajustar más la altura */
+        border-radius: 0; /* Bordes menos pronunciados o eliminados */
+    }
+
+    .carousel-item img {
+        height: 350px; /* Altura de imagen más pequeña para móviles */
+        object-fit: contain; /* Asegurarse de que la imagen se vea completa si es necesario */
+    }
+
+    .carousel-item .team-name {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño para el nombre del equipo */
+        bottom: 10px;
+        padding: 5px 10px;
+    }
+
+    .carousel-control {
+        padding: 10px 12px;
+        font-size: 1.5em; /* Iconos de control más pequeños */
+        background-color: rgba(0, 0, 0, 0.7); /* Hacer los controles un poco más opacos */
+    }
+
+    .carousel-control.prev {
+        left: 5px; /* Más cerca del borde */
+    }
+
+    .carousel-control.next {
+        right: 5px; /* Más cerca del borde */
+    }
+}
+
+/* Para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 50vh; /* Altura aún más ajustada */
+    }
+
+    .carousel-item img {
+        height: 250px; /* Altura de imagen para dispositivos muy pequeños */
+    }
+
+    .carousel-item .team-name {
+        font-size: 1.2em;
+        bottom: 5px;
+        padding: 3px 8px;
+    }
+
+    .carousel-control {
+        padding: 8px 10px;
+        font-size: 1.2em;
+    }
+}
+
+/* --- Media Queries Circuit --- */
+
+/* For screens smaller than 768px (e.g., tablets in portrait, most phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .circuit,
+    .gps {
+        width: 100%; /* Each section takes full width */
+        min-height: auto; /* Allow height to adjust to content */
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .title {
+        font-size: 2rem; /* Reduce font size for titles */
+    }
+
+    .subtitle {
+        font-size: 1.8rem; /* Reduce font size for subtitles */
+    }
+
+    .circuit-container ul {
+        /* Adjust grid for smaller screens to allow more columns if possible, but keep buttons readable */
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller min-width for buttons */
+        gap: 8px; /* Slightly reduced gap */
+    }
+
+    .boton-icon-gp {
+        max-width: 80px; /* Reduce max-width of buttons */
+    }
+
+    .gp-img {
+        max-width: 300px; /* Smaller max-width for the main image */
+    }
+}
+
+/* For very small screens (e.g., small phones) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .circuit-container ul {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Even smaller min-width for buttons */
+        gap: 5px;
+    }
+
+    .boton-icon-gp {
+        max-width: 60px; /* Even smaller max-width for buttons */
+    }
+
+    .gp-img {
+        max-width: 250px;
+    }
+}
+
+/* Optional: For very large screens (e.g., large monitors) if you want to optimize further */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1600px; /* Limit overall width on very large screens */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 2.5rem;
+    }
+
+    .gp-img {
+        max-width: 550px;
+    }
+}
+
+/* --- Media Queries Footer---*/
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* En pantallas más grandes, los elementos se distribuyen en fila */
+        justify-content: space-between; /* Espacio equitativo entre elementos */
+        align-items: center;
+    }
+
+    .footer-content p {
+        flex-basis: 30%; /* Asigna un ancho relativo */
+        text-align: left;
+    }
+
+    .footer-links {
+        flex-basis: 40%;
+        justify-content: center; /* Centra los enlaces si hay espacio */
+    }
+
+    .footer-social {
+        flex-basis: 30%;
+        justify-content: flex-end; /* Alinea los iconos a la derecha */
+    }
+}
+
+/* Para pantallas muy pequeñas (smartphones) */
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 15px 10px; /* Reduce el padding */
+    }
+
+    .footer-content p,
+    .footer-links li a {
+        font-size: 0.8rem; /* Reduce el tamaño de fuente */
+    }
+
+    .footer-links {
+        gap: 10px; /* Reduce el espacio entre enlaces */
+    }
+
+    .footer-social img {
+        width: 20px;
+        height: 20px;
+    }
+}

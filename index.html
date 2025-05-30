@@ -1,0 +1,419 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/grid.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+        <link rel="stylesheet" href="CSS/banner.css">
+        <link rel="stylesheet" href="CSS/scroll.css">
+        <link rel="stylesheet" href="CSS/circuits.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="shortcut icon" href="ASSETS/favicon.png" type="image/x-icon">
+        <title>F1 Project</title>
+    </head>
+    <body>
+        <!--SECCIÓN DEL HEADER-->
+        <header class="section">
+            <div class="header-container">
+                <div class="logo-and-car">
+                    <img src="ASSETS/f1logo.png" alt="F1 Logo" class="f1-logo">
+                    <img src="ASSETS/f1car.png" alt="F1 Car" class="f1-car">
+                </div>
+                <div class="text-container">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a class="nav-link" href="#parrilla-section">PARRILLA</a></li>
+                            <li><a class="nav-link" href="#body-principal">EQUIPOS</a></li>
+                            <li><a class="nav-link" href="#circuit-section">CIRCUITOS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-description">
+                        <h1>¿Qué es?</h1>
+                        <br>
+                        <p>La Fórmula 1 (F1) es la competición de automovilismo más prestigiosa y tecnológicamente avanzada del mundo. Conocida como la "categoría reina", enfrenta a monoplazas diseñados para la máxima velocidad y rendimiento en circuitos permanentes y urbanos alrededor del globo.</p>
+                    </div>            
+                </div>
+            </div>
+        </header>
+        <!--SECCIÓN DE LA PARRILLA-->
+        <section class="section" id="parrilla-section">
+            <div class="container">
+                <div class="grid">
+                    <h1 class="title">PARRILLA</h1>
+                    <div class="pilot-container">
+                        <ul>
+                            <li>
+                                <button type="button" class="boton-icon ferrari" data-target="leclerc-face" data-name="Charles Leclerc" data-number="16" data-color="#E40A27" data-team-id="ferrari">
+                                <img src="ASSETS/pilotos/1-Leclerc.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon ferrari" data-target="hamilton-face" data-name="Lewis Hamilton" data-number="44" data-color="#E40A27" data-team-id="ferrari">
+                                    <img src="ASSETS/pilotos/2-Hamilton.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon redbull" data-target="verstappen-face" data-name="Max Verstappen" data-number="1" data-color="#3671C6" data-team-id="redbull">
+                                    <img src="ASSETS/pilotos/3-Verstappen.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon redbull" data-target="lawson-face" data-name="Liam Lawson" data-number="30" data-color="#3671C6" data-team-id="redbull">
+                                    <img src="ASSETS/pilotos/4-Lawson.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon mercedes" data-target="antonelli-face" data-name="Kimi Antonelli" data-number="12" data-color="#27F4D3" data-team-id="mercedes">
+                                    <img src="ASSETS/pilotos/5-Antonelli.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon mercedes" data-target="russell-face" data-name="George Russell" data-number="63" data-color="#27F4D3" data-team-id="mercedes">
+                                    <img src="ASSETS/pilotos/6-Russell.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon aston" data-target="alonso-face" data-name="Fernando Alonso" data-number="14" data-color="#279D75" data-team-id="aston">
+                                    <img src="ASSETS/pilotos/7-Alonso.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon aston" data-target="stroll-face" data-name="Lance Stroll" data-number="18" data-color="#279D75" data-team-id="aston">
+                                    <img src="ASSETS/pilotos/8-Stroll.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon williams" data-target="sainz-face" data-name="Carlos Sainz" data-number="55" data-color="#65C3FB" data-team-id="williams">
+                                    <img src="ASSETS/pilotos/9-Sainz.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon williams" data-target="albon-face" data-name="Alex Albon" data-number="23" data-color="#65C3FB" data-team-id="williams">
+                                    <img src="ASSETS/pilotos/10-Albon.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon mclaren" data-target="norris-face" data-name="Lando Norris" data-number="4" data-color="#F58215" data-team-id="mclaren">
+                                    <img src="ASSETS/pilotos/11-Norris.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon mclaren" data-target="piastri-face" data-name="Oscar Piastri" data-number="81" data-color="#F58215" data-team-id="mclaren">
+                                    <img src="ASSETS/pilotos/12-Piastri.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon haas" data-target="bearman-face" data-name="Oliver Bearman" data-number="87" data-color="#949494" data-team-id="haas">
+                                    <img src="ASSETS/pilotos/13-Bearman.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon haas" data-target="ocon-face" data-name="Esteban Ocon" data-number="31" data-color="#949494" data-team-id="haas">
+                                    <img src="ASSETS/pilotos/14-Ocon.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon rb" data-target="tsunoda-face" data-name="Yuki Tsunoda" data-number="22" data-color="#6692FF" data-team-id="rb">
+                                    <img src="ASSETS/pilotos/15-Tsunoda.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon rb" data-target="hadjar-face" data-name="Isack Hadjar" data-number="6" data-color="#6692FF" data-team-id="rb">
+                                    <img src="ASSETS/pilotos/16-Hadjar.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon sauber" data-target="hulkenberg-face" data-name="Nico Hulkenberg" data-number="27" data-color="#52E252" data-team-id="sauber">
+                                    <img src="ASSETS/pilotos/17-Hulkenberg.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon sauber" data-target="bortoleto-face" data-name="Gabriel Bortoleto" data-number="5" data-color="#52E252" data-team-id="sauber">
+                                    <img src="ASSETS/pilotos/18-Bortoleto.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon alpine" data-target="gasly-face" data-name="Pierre Gasly" data-number="10" data-color="#0593CB" data-team-id="alpine">
+                                    <img src="ASSETS/pilotos/19-Gasly.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon alpine" data-target="doohan-face" data-name="Jack Doohan" data-number="7" data-color="#0593CB" data-team-id="alpine">
+                                    <img src="ASSETS/pilotos/20-Doohan.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pilots">
+                    <div class="pilot-img-container">
+                        <img src="ASSETS/pilotos-face/piloto-null.png" alt="" class="pilot-img" id="piloto-null-face">
+
+                        <img src="ASSETS/pilotos-face/1-Leclerc.png" alt="" class="pilot-img oculto" id="leclerc-face">
+                        <img src="ASSETS/pilotos-face/2-Hamilton.png" alt="" class="pilot-img oculto" id="hamilton-face">
+                        <img src="ASSETS/pilotos-face/3-Verstappen.png" alt="" class="pilot-img oculto" id="verstappen-face">
+                        <img src="ASSETS/pilotos-face/4-Lawson.png" alt="" class="pilot-img oculto" id="lawson-face">
+                        <img src="ASSETS/pilotos-face/5-Antonelli.png" alt="" class="pilot-img oculto" id="antonelli-face">
+                        <img src="ASSETS/pilotos-face/6-Russell.png" alt="" class="pilot-img oculto" id="russell-face">
+                        <img src="ASSETS/pilotos-face/7-Alonso.png" alt="" class="pilot-img oculto" id="alonso-face">
+                        <img src="ASSETS/pilotos-face/8-Stroll.png" alt="" class="pilot-img oculto" id="stroll-face">
+                        <img src="ASSETS/pilotos-face/9-Sainz.png" alt="" class="pilot-img oculto" id="sainz-face">
+                        <img src="ASSETS/pilotos-face/10-Albon.png" alt="" class="pilot-img oculto" id="albon-face">
+                        <img src="ASSETS/pilotos-face/11-Norris.png" alt="" class="pilot-img oculto" id="norris-face">
+                        <img src="ASSETS/pilotos-face/12-Piastri.png" alt="" class="pilot-img oculto" id="piastri-face">
+                        <img src="ASSETS/pilotos-face/13-Bearman.png" alt="" class="pilot-img oculto" id="bearman-face">
+                        <img src="ASSETS/pilotos-face/14-Ocon.png" alt="" class="pilot-img oculto" id="ocon-face">
+                        <img src="ASSETS/pilotos-face/15-Tsunoda.png" alt="" class="pilot-img oculto" id="tsunoda-face">
+                        <img src="ASSETS/pilotos-face/16-Hadjar.png" alt="" class="pilot-img oculto" id="hadjar-face">
+                        <img src="ASSETS/pilotos-face/17-Hulkenberg.png" alt="" class="pilot-img oculto" id="hulkenberg-face">
+                        <img src="ASSETS/pilotos-face/18-Bortoleto.png" alt="" class="pilot-img oculto" id="bortoleto-face">
+                        <img src="ASSETS/pilotos-face/19-Gasly.png" alt="" class="pilot-img oculto" id="gasly-face">
+                        <img src="ASSETS/pilotos-face/20-Doohan.png" alt="" class="pilot-img oculto" id="doohan-face">
+                    </div>
+                    <h1 class="title" id="pilot-name-display">PILOTOS</h1>
+                    <h2 class="subtitle" id="pilot-number-display">#</h2>
+                </div>
+                
+            </div>
+        </section>
+        <!--BANNER EQUIPOS-->
+        <section id="body-principal" class="section">
+        <div class="carousel-container">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-team-color="#E40A27" data-team-id="ferrari">
+                <img src="ASSETS/banner/1-Ferrari-logo.png" alt="Banner Ferrari">
+                <div class="team-name">Scuderia Ferrari</div>
+            </div>
+            <div class="carousel-item" data-team-color="#27F4D3" data-team-id="mercedes">
+                <img src="ASSETS/banner/2-Mercedes-logo.png" alt="Banner Mercedes">
+                <div class="team-name">Mercedes-AMG Petronas F1 Team</div>
+            </div>
+            <div class="carousel-item" data-team-color="#3671C6" data-team-id="redbull">
+                <img src="ASSETS/banner/3-Redbull-logo.png" alt="Banner Red Bull Racing">
+                <div class="team-name">Oracle Red Bull Racing</div>
+            </div>
+            <div class="carousel-item" data-team-color="#F58215" data-team-id="mclaren">
+                <img src="ASSETS/banner/4-Mclaren-logo.png" alt="Banner McLaren">
+                <div class="team-name">McLaren F1 Team</div>
+            </div>
+            <div class="carousel-item" data-team-color="#279D75" data-team-id="aston">
+                <img src="ASSETS/banner/5-Aston-logo.png" alt="Banner Aston Martin">
+                <div class="team-name">Aston Martin Aramco F1 Team</div>
+            </div>
+            <div class="carousel-item" data-team-color="#0593CB" data-team-id="alpine">
+                <img src="ASSETS/banner/6-Alpine-logo.png" alt="Banner Alpine">
+                <div class="team-name">BWT Alpine F1 Team</div>
+            </div>
+            <div class="carousel-item" data-team-color="#6692FF" data-team-id="rb">
+                <img src="ASSETS/banner/7-RB-logo.png" alt="Banner RB">
+                <div class="team-name">Visa Cash App RB F1 Team</div>
+            </div>
+            <div class="carousel-item" data-team-color="#52E252" data-team-id="sauber">
+                <img src="ASSETS/banner/8-Sauber-logo.png" alt="Banner Sauber">
+                <div class="team-name">Stake F1 Team Kick Sauber</div>
+            </div>
+            <div class="carousel-item" data-team-color="#949494" data-team-id="haas">
+                <img src="ASSETS/banner/9-Haas-logo.png" alt="Banner Haas">
+                <div class="team-name">MoneyGram Haas F1 Team</div>
+            </div>
+            <div class="carousel-item" data-team-color="#65C3FB" data-team-id="williams">
+                <img src="ASSETS/banner/10-Williams.png" alt="Banner Williams">
+                <div class="team-name">Williams Racing</div>
+            </div>
+        </div>
+        <button class="carousel-control prev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-control next" aria-label="Siguiente">&#10095;</button>
+    </div>
+        </section>
+        <!--SECCIÓN CIRCUITOS-->
+        <section class="section" id="circuit-section">
+            <div class="container">
+                <div class="circuit">
+                    <h1 class="title">Circuitos</h1>
+                    <div class="circuit-container">
+                        <ul>
+                            <li>
+                                <button type="button" class="boton-icon-gp ferrari" data-gp="bahrain" data-country="Bahrain" data-name="Sakhir" data-lap="1:31.447 Pedro de la Rosa McLaren-Mercedes(2005)" data-length="5,412 km">
+                                <img src="ASSETS/circuit-flat/1.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp ferrari" data-gp="jeddah" data-country="Arabia Saudita" data-name="Jeddah" data-lap="1:30.734 Lewis Hamilton(2021)" data-length="6.174 km">
+                                    <img src="ASSETS/circuit-flat/2.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp redbull" data-gp="australia" data-country="Australia" data-name="Melbourne" data-lap="1:19.813 Charles Leclerc(2024)" data-length="5.278 km">
+                                    <img src="ASSETS/circuit-flat/3.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp redbull" data-gp="japon" data-country="Japon" data-name="Suzuka" data-lap="1:30.965 Andrea Kimi Antonelli(2025)" data-length="5.807 km">
+                                    <img src="ASSETS/circuit-flat/4.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp mercedes" data-gp="china" data-country="China" data-name="Shanghai" data-lap="1:32.238 Michael Schumacher(2004)" data-length="5.451 km">
+                                    <img src="ASSETS/circuit-flat/5.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp mercedes" data-gp="miami" data-country="Miami" data-name="Miami International Autodrome" data-lap="1:29.708 Max Verstappen(2023)" data-length="5.412 km">
+                                    <img src="ASSETS/circuit-flat/6.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp aston" data-gp="romagna" data-country="Emilia Romagna" data-name="Imola" data-lap="1:15.484 Lewis Hamilton(2020)" data-length="4.909 km">
+                                    <img src="ASSETS/circuit-flat/7.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp aston" data-gp="monaco" data-country="Monaco" data-name="Circuito de Monaco" data-lap="1:12.909 Lewis Hamilton(2021)" data-length="5.451 km">
+                                    <img src="ASSETS/circuit-flat/8.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp williams" data-gp="canada" data-country="Canada" data-name="Montreal" data-lap="1:13.078 Valtteri Bottas(2019)" data-length="4.361 km">
+                                    <img src="ASSETS/circuit-flat/9.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp williams" data-gp="spain" data-country="España" data-name="Barcelona" data-lap="1:18.149 Max Verstappen(2023)" data-length="4.655 km">
+                                    <img src="ASSETS/circuit-flat/10.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp mclaren" data-gp="austria" data-country="Austria" data-name="RedBull Ring" data-lap="1:05.619 Carlos Sainz(2020)" data-length="4.318 km">
+                                    <img src="ASSETS/circuit-flat/11.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp mclaren" data-gp="uk" data-country="Reino Unido" data-name="Silverstone" data-lap="1:27.476 Max Verstappen(2020)" data-length="5.891 km">
+                                    <img src="ASSETS/circuit-flat/12.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp haas" data-gp="hungria" data-country="Hungria" data-name="Hungaroring" data-lap="1:16.627 Lewis Hamilton(2020)" data-length="4.381 km">
+                                    <img src="ASSETS/circuit-flat/13.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp haas" data-gp="belgium" data-country="Bélgica" data-name="Spa-Francorchamps" data-lap="1:44.701 Sergio Perez(2024)" data-length="7.004 km">
+                                    <img src="ASSETS/circuit-flat/14.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp rb" data-gp="paises-bajos" data-country="Países Bajos" data-name="Zandvoort" data-lap="1:11.097 Lewis Hamilton(2021)" data-length="4.259 km">
+                                    <img src="ASSETS/circuit-flat/15.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp rb" data-gp="italia" data-country="Italia" data-name="Nazionale Monza" data-lap="1:21.046 Rubens Barrichello(2004)" data-length="5.793 km">
+                                    <img src="ASSETS/circuit-flat/16.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp sauber" data-gp="baku" data-country="Azerbaiyán" data-name="Baku City Circuit" data-lap="1:43.009 Charles Leclerc(2019)" data-length="6.003 km">
+                                    <img src="ASSETS/circuit-flat/17.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp sauber" data-gp="singapur" data-country="Singapur" data-name="Marina Bay Street Circuit" data-lap="1:35.867 Lewis Hamilton(2023)" data-length="4.940 km">
+                                    <img src="ASSETS/circuit-flat/18.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp alpine" data-gp="usa" data-country="Estados Unidos" data-name="Circuit of the Americas" data-lap="1:36.169 Charles Leclerc(2019)" data-length="5.513 km">
+                                    <img src="ASSETS/circuit-flat/19.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp alpine" data-gp="mexico" data-country="México" data-name="Autódromo Hermanos Rodríguez" data-lap="1:17.774 George Russell(2021)" data-length="4.304 km">
+                                    <img src="ASSETS/circuit-flat/20.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp alpine" data-gp="brazil" data-country="Brasil" data-name="Autódromo José Carlos Pace" data-lap="1:10.540 Valtteri Bottas(2018)" data-length="4.309 km">
+                                    <img src="ASSETS/circuit-flat/21.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp alpine" data-gp="vegas" data-country="Estados Unidos" data-name="Las Vegas Strip Circuit" data-lap="1:34.876 Lando Norris(2024)" data-length="6.201 km">
+                                    <img src="ASSETS/circuit-flat/22.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp alpine" data-gp="qatar" data-country="Qatar" data-name="Losail International Circuit" data-lap="1:24.319 Max Verstappen(2023)" data-length="5.419 km">
+                                    <img src="ASSETS/circuit-flat/23.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="boton-icon-gp alpine" data-gp="abudhabi" data-country="Abu Dabi" data-name="Yas Marina Circuit" data-lap="1:26.993 Max Verstappen(2021)" data-length="5.281 km">
+                                    <img src="ASSETS/circuit-flat/24.png" alt="" class="grid-icon">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gps">
+                    <div class="gp-img-container">
+
+                        <img src="ASSETS/gp/1-Bahrain.png" alt="" class="gp-img oculto" id="bahrain">
+                        <img src="ASSETS/gp/2-jeddah.png" alt="" class="gp-img oculto" id="jeddah">
+                        <img src="ASSETS/gp/3-australia.png" alt="" class="gp-img oculto" id="australia">
+                        <img src="ASSETS/gp/4-Japon.png" alt="" class="gp-img oculto" id="japon">
+                        <img src="ASSETS/gp/5-china.png" alt="" class="gp-img oculto" id="china">
+                        <img src="ASSETS/gp/6-miami.png" alt="" class="gp-img oculto" id="miami">
+                        <img src="ASSETS/gp/7-imola.png" alt="" class="gp-img oculto" id="romagna">
+                        <img src="ASSETS/gp/8-monaco.png" alt="" class="gp-img oculto" id="monaco">
+                        <img src="ASSETS/gp/9-canada.png" alt="" class="gp-img oculto" id="canada">
+                        <img src="ASSETS/gp/10-spain.png" alt="" class="gp-img oculto" id="spain">
+                        <img src="ASSETS/gp/11-austria.png" alt="" class="gp-img oculto" id="austria">
+                        <img src="ASSETS/gp/12-uk.png" alt="" class="gp-img oculto" id="uk">
+                        <img src="ASSETS/gp/13-hungria.png" alt="" class="gp-img oculto" id="hungria">
+                        <img src="ASSETS/gp/14-spa.png" alt="" class="gp-img oculto" id="belgium">
+                        <img src="ASSETS/gp/15-bajos.png" alt="" class="gp-img oculto" id="paises-bajos">
+                        <img src="ASSETS/gp/16-monza.png" alt="" class="gp-img oculto" id="italia">
+                        <img src="ASSETS/gp/17-baku.png" alt="" class="gp-img oculto" id="baku">
+                        <img src="ASSETS/gp/18-singapur.png" alt="" class="gp-img oculto" id="singapur">
+                        <img src="ASSETS/gp/19-usa.png" alt="" class="gp-img oculto" id="usa">
+                        <img src="ASSETS/gp/20-mexico.png" alt="" class="gp-img oculto" id="mexico">
+                        <img src="ASSETS/gp/21-brazil.png" alt="" class="gp-img oculto" id="brazil">
+                        <img src="ASSETS/gp/22-vegas.png" alt="" class="gp-img oculto" id="vegas">
+                        <img src="ASSETS/gp/23-qatar.png" alt="" class="gp-img oculto" id="qatar">
+                        <img src="ASSETS/gp/24-abudhabi.png" alt="" class="gp-img oculto" id="abudhabi">
+                    </div>
+                    <h1 class="title" id="country-name-display">COUNTRY</h1>
+                    <h2 class="subtitle" id="gp-name-display">GP</h2>
+                    <h3 class="subtitle" id="gp-lap-display">0s</h3>
+                    <h3 class="subtitle" id="gp-length-display">0km</h3>
+                </div>
+                
+            </div>
+        </section>
+        <!--SCROLL BUTTON-->
+         <button id="scrollToTopBtn" title="Ir arriba"><img src="ASSETS/scroll.png"></img></button>
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Sebastian Gallardo. Todos los derechos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><img src="ASSETS/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="ASSETS/x.png" alt="Twitter"></a>
+                    <a href="#"><img src="ASSETS/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+    <!--SCRIPTS-->
+    <script src="JS/circuit.js"></script>
+    <script src="JS/bannerAndPilots.js"></script>
+    <script src="JS/scroll.js"></script>
+    </body>
+    </html>

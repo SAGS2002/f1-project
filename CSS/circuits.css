@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.circuit {
+    width: 50%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.circuit-container {
+    width: 100%;
+}
+
+.circuit-container ul {
+    padding-top: 20px;
+    display: grid;
+    /* Flexible column sizing for smaller screens, will be adjusted for larger ones */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust minmax for smaller buttons */
+    gap: 10px;
+    justify-content: center;
+}
+
+.circuit-container ul li {
+    list-style: none;
+    margin: 0;
+}
+
+.boton-icon-gp {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton-icon-gp img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Button hover */
+.boton-icon-gp {
+    transition: transform 0.3s;
+}
+
+.boton-icon-gp:hover {
+    transform: scale(1.1);
+}
+
+/* Pilots section */
+.gps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gp-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.gp-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+}
+
+.oculto {
+    display: none;
+}
+
+.gps .title {
+    font-size: 2.8rem;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.boton-icon-gp .active-gp {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    border: 2px solid white;
+}
+
+#gp-lap-display {
+    text-align: center;
+}

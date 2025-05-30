@@ -1,0 +1,59 @@
+footer {
+    background-color: #222; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    margin-top: auto; /* Empuja el footer hacia abajo si el body tiene display: flex y flex-direction: column */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limita el ancho del contenido para pantallas grandes */
+    margin: 0 auto; /* Centra el contenido del footer */
+    display: flex;
+    flex-direction: column; /* Por defecto, apila los elementos */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre los elementos del footer */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los enlaces */
+    gap: 15px; /* Espacio entre enlaces */
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #007bff; /* Color al pasar el mouse (ej: azul) */
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px; /* Espacio entre iconos sociales */
+}
+
+.footer-social img {
+    width: 24px; /* Tamaño de los iconos */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+}

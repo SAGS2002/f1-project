@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    min-height: 100vh; 
+}
+
+.grid {
+    width: 50%; 
+    min-height: 100vh; 
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.pilot-container {
+    width: 100%;
+}
+
+.pilot-container ul {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px ; 
+    gap: 10px; 
+    justify-content: center;
+}
+
+.pilot-container ul li {
+    list-style: none;
+    margin: 0;
+}
+
+.boton-icon {
+    width: 100%; 
+    max-width: 100px; 
+    border-radius: 10px;
+    cursor: pointer; 
+    padding: 0; 
+    border: none;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.boton-icon img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Button hover */
+.ferrari { transition: transform 0.3s, background-color 0.3s; }
+.ferrari:hover { transform: scale(1.1); background-color: #e40a27; }
+
+.redbull { transition: transform 0.3s, background-color 0.3s; }
+.redbull:hover { transform: scale(1.1); background-color: #3870c5; }
+
+.mercedes { transition: transform 0.3s, background-color 0.3s; }
+.mercedes:hover { transform: scale(1.1); background-color: #27f4d3; }
+
+.aston { transition: transform 0.3s, background-color 0.3s; }
+.aston:hover { transform: scale(1.1); background-color: #279d75; }
+
+.williams { transition: transform 0.3s, background-color 0.3s; }
+.williams:hover { transform: scale(1.1); background-color: #65c3fb; }
+
+.mclaren { transition: transform 0.3s, background-color 0.3s; }
+.mclaren:hover { transform: scale(1.1); background-color: #f58215; }
+
+.haas { transition: transform 0.3s, background-color 0.3s; }
+.haas:hover { transform: scale(1.1); background-color: #949494; }
+
+.rb { transition: transform 0.3s, background-color 0.3s; }
+.rb:hover { transform: scale(1.1); background-color: #6692ff; }
+
+.sauber { transition: transform 0.3s, background-color 0.3s; }
+.sauber:hover { transform: scale(1.1); background-color: #056434; }
+
+.alpine { transition: transform 0.3s, background-color 0.3s;}
+.alpine:hover { transform: scale(1.1); border: #0593cb 1px;}
+
+
+/* Pilots section */
+.pilots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 50%; 
+    min-height: 100vh; 
+    transition: background-color 0.5s ease-in-out;
+    padding: 20px;
+    
+}
+
+.pilot-img-container {
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.pilot-img {
+    width: 100%; 
+    max-width: 450px; 
+    height: auto;
+    display: block;
+    mask-image: linear-gradient(to top, transparent 0%, black 30%, black 100%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%, black 100%);
+}
+
+.oculto {
+    display: none;
+    
+}
+
+
+.pilots .title {
+    font-size: 2.8rem;
+    margin-top: 10px; 
+}
+
+.subtitle {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.boton-icon.active-pilot {
+    transform: scale(1.1); /* Escala el botón al 110% de su tamaño original */
+    transition: transform 0.3s ease-in-out; /* Transición suave para la animación */
+    /* Opcional: puedes añadir un box-shadow o un borde para mayor distinción */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Brillo alrededor del botón */
+    border: 2px solid white; /* Borde para resaltarlo */
+}

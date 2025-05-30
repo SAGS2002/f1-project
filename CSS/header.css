@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Formula1', sans-serif; /* Assuming 'Formula1' is a custom font you've imported */
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+/* Section styling */
+.section {
+    width: 100%;
+    background-color: #2C2C2C;
+}
+
+/* Header Section */
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Default for larger screens */
+    align-items: stretch; /* Stretch items to fill container height */
+    min-height: 100vh; /* Ensure header takes full viewport height on larger screens */
+}
+
+.logo-and-car {
+    background-color: #E10600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for better spacing */
+    flex-shrink: 0; /* Prevent shrinking on smaller screens initially */
+    width: 50%; /* Take up half width on larger screens */
+}
+
+.f1-logo {
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80%; /* Ensure it doesn't overflow on smaller screens */
+}
+
+.f1-car {
+    width: 800px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.7));
+    position: relative;
+    max-width: 100%; /* Ensure it scales down */
+}
+
+.text-container {
+    background-color: #2C2C2C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;/* Center content vertically */
+    text-align: center;
+    width: 50%; /* Take up half width on larger screens */
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0; /* Remove default padding */
+}
+
+.main-nav ul li {
+    list-style: none;
+    padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 1s;
+}
+
+.main-nav ul li a:hover {
+    color: #E10600;
+    transition: 1s;
+}
+
+.header-description {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-description h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-description p {
+    font-size: 1.5rem;
+    color: #ccc;
+    max-width: 800px; /* Limit width for readability */
+}
+
+
+
+/* For screens smaller than 1200px (e.g., large tablets, smaller desktops) */
+
